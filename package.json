@@ -1,23 +1,22 @@
 {
-  "name": "webpack-three-js-template",
+  "homepage": "https://dev.robyte.me/galaxygenerator",
+  "name": "galaxygenerator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack-dev-server --config ./bundler/webpack.dev.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brunosimon/webpack-three-js-template.git"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brunosimon/webpack-three-js-template/issues"
   },
-  "homepage": "https://github.com/brunosimon/webpack-three-js-template#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -26,6 +25,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "gh-pages": "^4.0.0",
     "glslify-loader": "^2.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
